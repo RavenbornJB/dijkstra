@@ -175,10 +175,7 @@ std::vector<int> dijkstra() {
         // Дороги немає, значить граф має більше ніж одну компоненту,
         // або взагалі неправильно заданий.
         std::cout << std::endl << std::endl << "Path not found. Make sure your graph is valid and only contains one component." << std::endl;
-        std::vector<int> error;
-        for (int i = 0; i < n; ++i) {
-            error.push_back(-1);
-        }
+        std::vector<int> error = {-1};
         return error;
     }
 }
